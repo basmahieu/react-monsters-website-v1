@@ -1,41 +1,38 @@
 import React from 'react';
 import {
     ProductsContainer,
-    ProductsHeading,
     ProductWrapper,
-    ProductCard,
-    ProductInfo,
-    ProductImg,
+    ProductsHeading,
     ProductTitle,
+    ProductCard,
+    ProductImg,
+    ProductInfo,
     ProductDesc,
     ProductPrice,
     ProductButton,
 } from './ProductElements';
 
-
-
 const Products = ({heading, data}) => {
     return (
         <ProductsContainer>
-        <ProductsHeading>{heading}</ProductsHeading>
+            <ProductsHeading>{heading}</ProductsHeading>
             <ProductWrapper>
-                {data.map((monster, index) => {
-                    
-                    return (
-                    <ProductCard key={index}>
-                    <ProductImg src={monster.img} alt={monster.alt} />
-                        <ProductInfo>
-                                <ProductTitle>{monster.name}</ProductTitle>
-                                <ProductDesc>{monster.desc}</ProductDesc>
-                                <ProductPrice>{monster.price}</ProductPrice>
-                                <ProductButton>{monster.button}</ProductButton>
-                            </ProductInfo>
-                    </ProductCard>
-                    )
-                })}
+                {data.map((product, index) => {
+                   return (
+                       <ProductCard key={index}>
+                           <ProductImg src={product.img} alt={product.alt} />
+                           <ProductInfo>
+                               <ProductTitle>{product.name}</ProductTitle>
+                               <ProductDesc>{product.desc}</ProductDesc>
+                               <ProductPrice>{product.price}</ProductPrice>
+                               <ProductButton>{product.button}</ProductButton>
+                           </ProductInfo>
+                       </ProductCard>
+                   );
+               })} 
             </ProductWrapper>
         </ProductsContainer>
-    )
-}
+    );
+};
 
 export default Products

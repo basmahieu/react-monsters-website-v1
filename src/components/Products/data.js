@@ -2,7 +2,7 @@ import monsterG from '../../images/monsterG.jpg';
 import monsterY from '../../images/monsterY.jpg';
 import monsterO from '../../images/monsterO.jpg';
 
-export const productData =[
+export const productData = [
     {
         img: monsterG,
         alt: 'Monster G',
@@ -23,8 +23,8 @@ export const productData =[
         img: monsterO,
         alt: 'Monster O',
         name: 'Monster O',
-        desc: 'Monster O has good heart, he will try his outmost best to destroy and get the job done. But will certainly fail!',
-        price: '99 Souls',
+        desc: 'Monster O has good heart, he will try his outmost best get the job done. But will certainly fail!',
+        price: '01 Soul',
         button: 'Hire Monster O'
     }
 ]

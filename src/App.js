@@ -4,6 +4,7 @@ import { GlobalStyle } from './globalstyles';
 import { Hero } from './components/Hero';
 import Products from './components/Products';
 import { productData } from './components/Products/data';
+
  
 
 function App() {
@@ -11,7 +12,7 @@ function App() {
     <Router>
     <GlobalStyle />
       <Hero />
-      <Products heading='Choose your Monster' data={productData}/>
+      <Products heading="Choose your Monster" data={productData}/>
     </Router>
   );
 }
