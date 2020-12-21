@@ -13,12 +13,19 @@ font-weight:700;
 `;
 
 export const NavLink = styled(Link)`
-    color:#fff;
+    color:#28E5B9;
     font-size:2rem;
+    transition:0.2s ease-out;
     display:flex;
     align-items:center;
     text-decoration:none;
     cursor:pointer;
+
+    &:hover{
+            font-size:2.4rem;
+            transition:0.2s ease-out;
+            cursor:pointer;
+        }
 
     @media screen and (max-width:400px){
         position:absolute;
@@ -33,7 +40,16 @@ export const NavLink = styled(Link)`
         top:0;
         right: 0;
         cursor:pointer;
-        color: #fff;
+        color:#fff;
+        transition:0.2s ease-out;
+
+
+        &:hover{
+            cursor:pointer;
+            color:#EF4552;
+            transition:0.2s ease-out;
+
+        }
 
     p{
         transform: translate(-175%, 100%);
