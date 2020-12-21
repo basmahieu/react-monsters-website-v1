@@ -3,7 +3,9 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import { GlobalStyle } from './globalstyles';
 import { Hero } from './components/Hero';
 import Products from './components/Products';
-import { productData } from './components/Products/data';
+import { productData, productDataTwo } from './components/Products/data';
+import Feature from './components/Feature/index';
+import Footer  from './components/Footer/index';
 
  
 
@@ -13,6 +15,9 @@ function App() {
     <GlobalStyle />
       <Hero />
       <Products heading="Choose your Monster" data={productData}/>
+      <Feature />
+      <Products heading="World domination" data={productDataTwo}/>
+      <Footer />
     </Router>
   );
 }
